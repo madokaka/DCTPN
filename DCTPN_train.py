@@ -22,15 +22,10 @@ import progressbar
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--dataset',type=str,default='ActivityNet')
-# parser.add_argument('--data',type=str,default='/Activitynet/activity_net.v1-3.min.json')
-# parser.add_argument('--features',type=str,default='/Activitynet//c3d_features_Activitynet_merge.hdf5')
-# parser.add_argument('--labels',type=str,default='/Activitynet/acitivity_labels.hdf5')
-# parser.add_argument('--vid_ids',type=str,default='/Activitynet/activity_video_ids.json')
-# parser.add_argument('--k',type=int,default=64)
 parser.add_argument('--data',type=str,default='activity_net.v1-3.min.json')
 parser.add_argument('--features',type=str,default='c3d_features_Activitynet_training.hdf5')
-parser.add_argument('--labels',type=str,default='acitivity_labels_64_2.hdf5')
-parser.add_argument('--vid_ids',type=str,default='activity_video_ids_64_2.json')
+parser.add_argument('--labels',type=str,default='acitivity_labels_128.hdf5')
+parser.add_argument('--vid_ids',type=str,default='activity_video_ids_128.json')
 parser.add_argument('--k',type=int,default=64)
 args = parser.parse_args()
 

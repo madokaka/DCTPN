@@ -46,7 +46,7 @@ def feature_extractor():
 	f = h5py.File(os.path.join(OUTPUT_DIR, OUTPUT_NAME), 'a')
 
 	# current location
-	temp_path = 'D:\\temp'
+	temp_path = './temp'
 	if not os.path.exists(temp_path):
 		os.mkdir(temp_path)
 
@@ -150,9 +150,9 @@ if __name__ == "__main__":
 	print ('******--------- Extract C3D features ------*******')
 	parser.add_argument('-o', '--OUTPUT_DIR', dest='OUTPUT_DIR', type=str, default='output_frm/', help='Output file name')
 	parser.add_argument('-l', '--EXTRACTED_LAYER', dest='EXTRACTED_LAYER', type=int, choices=[5, 6, 7, 8], default=7, help='Feature extractor layer')
-	parser.add_argument('-i', '--VIDEO_DIR', dest='VIDEO_DIR', type = str, default='E:/activitynet_dataset/new_testing/',help='Input Video directory')
+	parser.add_argument('-i', '--VIDEO_DIR', dest='VIDEO_DIR', type = str, default='/activitynet_dataset/new_testing/',help='Input Video directory')
 	parser.add_argument('-gpu', '--gpu', dest='GPU', action = 'store_true', help='Run GPU?')
-	parser.add_argument('--OUTPUT_NAME', default='c3d_features_Activitynet_testing_sm_4000_end.hdf5', help='The output name of the hdf5 features')
+	parser.add_argument('--OUTPUT_NAME', default='c3d_features_Activitynet_testing.hdf5', help='The output name of the hdf5 features')
 	parser.add_argument('-b', '--BATCH_SIZE', default=1, help='the batch size')
 	parser.add_argument('-id', '--gpu_id', default=0, type=int)
 	parser.add_argument('-p', '--video_list_file', type=str,default= 'video_list_testing.txt' ,help='the video name list')
