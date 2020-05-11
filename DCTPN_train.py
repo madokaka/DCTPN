@@ -81,7 +81,7 @@ class ProposalDataset(object):
                 timestamps = [ann['segment'] for ann in annotations]
                 featstamps = [self.timestamp_to_featstamp(x,nfeats,duration) for x in timestamps]
                 nb_prop = len(featstamps)
-                # 从尾部删除
+
                 for i in range(nb_prop):
                     if (featstamps[nb_prop-i-1][1] - featstamps[nb_prop-i-1][0]>args.k/0.5):
                         del featstamps[nb_prop-i-1]

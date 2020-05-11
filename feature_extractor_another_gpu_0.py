@@ -46,7 +46,7 @@ def feature_extractor():
 	f = h5py.File(os.path.join(OUTPUT_DIR, OUTPUT_NAME), 'a')
 
 	# current location
-	temp_path = './temp'
+	temp_path = ''
 	if not os.path.exists(temp_path):
 		os.mkdir(temp_path)
 

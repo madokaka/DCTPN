@@ -28,7 +28,7 @@ model.cuda()
 
 
 model.eval()
-features = h5py.File('temp/output_frm/c3d_features_train_1_test.hdf5')
+features = h5py.File('output_frm/c3d_features_train_1_test.hdf5')
 
 video_list = []
 for k in features.keys():
