@@ -1,4 +1,4 @@
-# DCTPN
+# DCTPN Demo
 
 Dilated Convolutional Temporal Prediction Network
 
