@@ -1,8 +1,8 @@
 # DCTPN
 
-基于Pytorch的时序动作检测神经网络
+Dilated Convolutional Temporal Prediction Network
 
-# 环境要求
+# Requirements
 
   - pytorch
   - pickle
@@ -10,11 +10,11 @@
   - progressbar
   - h5py
 
-# 使用指南
-  - 修改video_list_testing,video_list_training,将需要训练和测试的视频的文件名写入。
-  - 修改args参数，运行feature_extractor_another_gpu_0将视频提取为图片。
-  - 修改args参数，运行DCTPN_train进行训练
-  - 修改hdf5路径，运行write_json，得到json结果
-# 使用指南
- - C3D权重链接[百度网盘](https://pan.baidu.com/s/1fnfsq9kZe7F6PAUO6B60oQ) 
- - 提取码：plsq
+# Training and Testing of DCTPN
+  - Write the video file name to video_list_testing and video_list_training,
+  - Modify the args parameters and run feature_extractor_another_gpu_0 to extract the video as a picture.
+  - Modify args parameters, run DCTPN_train for training
+  - Modify hdf5 path, run the write_json
+# Weight
+ - C3D weight [百度网盘](https://pan.baidu.com/s/1fnfsq9kZe7F6PAUO6B60oQ) 
+ - Extraction code：plsq
