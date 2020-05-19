@@ -17,4 +17,3 @@ Dilated Convolutional Temporal Prediction Network
   - Modify hdf5 path, run the write_json
 # Weight
  - C3D weight [百度网盘](https://pan.baidu.com/s/1fnfsq9kZe7F6PAUO6B60oQ) 
- - Extraction code：plsq
